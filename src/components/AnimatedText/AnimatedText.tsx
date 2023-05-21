@@ -28,7 +28,7 @@ export const AnimatedText = ({
                             y: 50,
                             opacity: 0
                         }}
-                        animate={{
+                        whileInView={{
                             y: 0,
                             opacity: 1,
                             transition: {
@@ -36,6 +36,7 @@ export const AnimatedText = ({
                                 delay: index * 0.05
                             }
                         }}
+                        viewport={{ once: true }}
                         className={
                             cn(
                                 "text-6xl font-bold"
